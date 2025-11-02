@@ -4,6 +4,7 @@ export default defineConfig({
   title: "Salesforce Navigator",
   description: "Keyboard-driven navigation and vim-like editing for Salesforce Lightning Experience",
   base: '/salesforce-navigator-documentation/',
+  cleanUrls: true,
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
