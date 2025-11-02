@@ -1,0 +1,504 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Tokyo Night Moon Color Palette
+ * Matching the Salesforce Navigator extension design
+ */
+
+:root {
+  /* Brand Colors - Tokyo Night Moon Theme */
+  --vp-c-brand-1: #4659e3; /* Primary blue */
+  --vp-c-brand-2: #82aaff; /* Secondary blue */
+  --vp-c-brand-3: #3d4db8; /* Darker brand */
+  --vp-c-brand-soft: rgba(70, 89, 227, 0.14);
+
+  /* Background Colors */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-soft: #f9f9f9;
+  --vp-c-bg-mute: #f1f1f1;
+
+  /* Text Colors */
+  --vp-c-text-1: rgba(60, 60, 67, 1);
+  --vp-c-text-2: rgba(60, 60, 67, 0.78);
+  --vp-c-text-3: rgba(60, 60, 67, 0.56);
+
+  /* Interactive Colors */
+  --vp-c-green-1: #4bca81;
+  --vp-c-green-2: #3da66a;
+  --vp-c-green-3: #2d7d4f;
+  --vp-c-green-soft: rgba(75, 202, 129, 0.14);
+
+  --vp-c-yellow-1: #ff9e64;
+  --vp-c-yellow-2: #e88450;
+  --vp-c-yellow-3: #d16a3d;
+  --vp-c-yellow-soft: rgba(255, 158, 100, 0.14);
+
+  --vp-c-red-1: #ff757f;
+  --vp-c-red-2: #e85b65;
+  --vp-c-red-3: #d1414c;
+  --vp-c-red-soft: rgba(255, 117, 127, 0.14);
+
+  /* Code Block Colors */
+  --vp-code-block-bg: #f6f6f7;
+  --vp-code-bg: rgba(70, 89, 227, 0.08);
+  --vp-code-color: #4659e3;
+}
+
+.dark {
+  /* Brand Colors - Dark Mode */
+  --vp-c-brand-1: #4659e3;
+  --vp-c-brand-2: #82aaff;
+  --vp-c-brand-3: #3d4db8;
+  --vp-c-brand-soft: rgba(70, 89, 227, 0.16);
+
+  /* Background Colors - Tokyo Night Moon */
+  --vp-c-bg: #222436;
+  --vp-c-bg-soft: #1b1d2b;
+  --vp-c-bg-mute: #2f334d;
+  --vp-c-bg-alt: #1e2030;
+
+  /* Text Colors */
+  --vp-c-text-1: #c8d3f5;
+  --vp-c-text-2: #828bb8;
+  --vp-c-text-3: #8b92a3;
+
+  /* Border Colors */
+  --vp-c-divider: #2a2d3d;
+  --vp-c-border: #2f334d;
+
+  /* Interactive Colors */
+  --vp-c-green-1: #c3e88d;
+  --vp-c-green-2: #a8d475;
+  --vp-c-green-3: #8ebf5d;
+  --vp-c-green-soft: rgba(195, 232, 141, 0.14);
+
+  --vp-c-yellow-1: #ff966c;
+  --vp-c-yellow-2: #e88050;
+  --vp-c-yellow-3: #d16a34;
+  --vp-c-yellow-soft: rgba(255, 150, 108, 0.14);
+
+  --vp-c-red-1: #ff757f;
+  --vp-c-red-2: #e85b65;
+  --vp-c-red-3: #d1414c;
+  --vp-c-red-soft: rgba(255, 117, 127, 0.14);
+
+  /* Code Block Colors */
+  --vp-code-block-bg: #1b1d2b;
+  --vp-code-bg: rgba(70, 89, 227, 0.12);
+  --vp-code-color: #82aaff;
+
+  /* Button Colors */
+  --vp-button-brand-bg: #4659e3;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-hover-bg: #3d4db8;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-active-bg: #3342a0;
+
+  --vp-button-alt-bg: #2f334d;
+  --vp-button-alt-text: #c8d3f5;
+  --vp-button-alt-hover-bg: #3d4259;
+  --vp-button-alt-hover-text: #c8d3f5;
+
+  /* Sidebar */
+  --vp-sidebar-bg-color: #1b1d2b;
+
+  /* Nav */
+  --vp-nav-bg-color: #1b1d2b;
+
+  /* Custom Components */
+  --vp-custom-block-tip-border: #4659e3;
+  --vp-custom-block-tip-text: #c8d3f5;
+  --vp-custom-block-tip-bg: rgba(70, 89, 227, 0.1);
+  --vp-custom-block-tip-code-bg: rgba(70, 89, 227, 0.05);
+
+  --vp-custom-block-info-border: #82aaff;
+  --vp-custom-block-info-text: #c8d3f5;
+  --vp-custom-block-info-bg: rgba(130, 170, 255, 0.1);
+  --vp-custom-block-info-code-bg: rgba(130, 170, 255, 0.05);
+
+  --vp-custom-block-warning-border: #ff966c;
+  --vp-custom-block-warning-text: #c8d3f5;
+  --vp-custom-block-warning-bg: rgba(255, 150, 108, 0.1);
+  --vp-custom-block-warning-code-bg: rgba(255, 150, 108, 0.05);
+
+  --vp-custom-block-danger-border: #ff757f;
+  --vp-custom-block-danger-text: #c8d3f5;
+  --vp-custom-block-danger-bg: rgba(255, 117, 127, 0.1);
+  --vp-custom-block-danger-code-bg: rgba(255, 117, 127, 0.05);
+}
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+.vp-doc .custom-block {
+  border-radius: 8px;
+}
+
+/**
+ * Component: Code
+ * -------------------------------------------------------------------------- */
+
+.vp-doc code {
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.vp-doc pre code {
+  border-radius: 0;
+  padding: 0;
+}
+
+.vp-doc div[class*='language-'] {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/**
+ * Component: Table
+ * -------------------------------------------------------------------------- */
+
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+.vp-doc .VPButton {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.vp-doc .VPButton:hover {
+  transform: translateY(-1px);
+}
+
+.vp-doc .VPButton:active {
+  transform: translateY(0);
+}
+
+/**
+ * Component: Hero
+ * -------------------------------------------------------------------------- */
+
+.VPHero .name {
+  background: linear-gradient(120deg, #4659e3 30%, #82aaff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .VPHero .name {
+  background: linear-gradient(120deg, #82aaff 30%, #c8d3f5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.VPHero .tagline {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/**
+ * Component: Features
+ * -------------------------------------------------------------------------- */
+
+.VPFeature {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.VPFeature .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/**
+ * Component: Navbar
+ * -------------------------------------------------------------------------- */
+
+.VPNav {
+  backdrop-filter: blur(8px);
+}
+
+/* Use solid background on all pages except home */
+body:not(:has(.VPHome)) .VPNav {
+  background-color: var(--vp-nav-bg-color);
+}
+
+/**
+ * Component: Sidebar
+ * -------------------------------------------------------------------------- */
+
+.VPSidebar {
+  backdrop-filter: blur(8px);
+}
+
+.VPSidebarItem.is-active > .item > .link {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/**
+ * Component: Search
+ * -------------------------------------------------------------------------- */
+
+.VPLocalSearchBox {
+  border-radius: 8px;
+}
+
+/* Remove outline on search input focus */
+.DocSearch-Input:focus,
+.VPNavBarSearch input:focus,
+.VPLocalSearchBox input:focus {
+  outline: none !important;
+}
+
+/**
+ * Scrollbar Styling (matching extension)
+ * -------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-soft);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-brand-soft);
+  border-radius: 6px;
+  border: 2px solid var(--vp-c-bg-soft);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-1);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1b1d2b;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #2d3f76;
+  border: 2px solid #1b1d2b;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #82aaff;
+}
+
+/**
+ * Custom Typography
+ * -------------------------------------------------------------------------- */
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  font-weight: 600;
+}
+
+.vp-doc h1 {
+  letter-spacing: -0.02em;
+}
+
+.vp-doc p {
+  line-height: 1.7;
+}
+
+/**
+ * Keyboard Shortcut Badge
+ * -------------------------------------------------------------------------- */
+
+.vp-doc kbd {
+  background: var(--vp-c-bg-mute);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.85em;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark .vp-doc kbd {
+  background: #2f334d;
+  border: 1px solid #3d4259;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * Mobile Navigation Fix
+ * -------------------------------------------------------------------------- */
+
+/* Fix mobile menu - VitePress default has height: 0 issue */
+@media (max-width: 960px) {
+  /* Fix VPNavScreen height issue - use min-height instead of height */
+  .VPNavScreen {
+    position: fixed !important;
+    top: var(--vp-nav-height, 64px) !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    min-height: calc(100vh - var(--vp-nav-height, 64px)) !important;
+    max-height: calc(100vh - var(--vp-nav-height, 64px)) !important;
+    overflow-y: auto !important;
+    z-index: 60 !important;
+    background-color: var(--vp-nav-bg-color) !important;
+  }
+
+  /* Ensure container has proper height */
+  .VPNavScreen .container {
+    min-height: 100% !important;
+    padding: 24px !important;
+  }
+
+  /* Make sure the menu is visible */
+  .VPNavScreenMenu {
+    display: block !important;
+  }
+
+  /* Style nav links for better touch targets */
+  .VPNavScreenMenuLink {
+    display: block !important;
+    padding: 12px 16px !important;
+    font-size: 16px !important;
+    min-height: 44px !important;
+  }
+
+  /* Ensure appearance and social links are visible */
+  .VPNavScreenAppearance,
+  .VPNavScreenSocialLinks {
+    display: flex !important;
+    padding: 16px !important;
+    border-top: 1px solid var(--vp-c-divider) !important;
+  }
+
+  .VPNavBar {
+    z-index: 70;
+  }
+}
+
+/**
+ * Responsive Design
+ * -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .VPHero .name {
+    font-size: 2rem;
+  }
+
+  .VPHero .tagline {
+    font-size: 1rem;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.75rem;
+  }
+
+  .vp-doc h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Ensure hamburger menu is easily tappable */
+  .VPNavBarHamburger {
+    padding: 12px;
+    min-width: 48px;
+    min-height: 48px;
+  }
+
+  /* Better touch targets for mobile nav */
+  .VPNavBarMenuLink,
+  .VPSidebarItem .link {
+    padding: 12px 16px;
+    min-height: 44px;
+  }
+}
+
+/**
+ * Print Styles
+ * -------------------------------------------------------------------------- */
+
+@media print {
+  .VPNav,
+  .VPSidebar,
+  .VPFooter,
+  .edit-link,
+  .prev-next {
+    display: none;
+  }
+
+  .vp-doc {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+/**
+ * Animations
+ * -------------------------------------------------------------------------- */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vp-doc > * {
+  animation: fadeIn 0.3s ease;
+}
+
+/**
+ * Focus Styles (Accessibility)
+ * -------------------------------------------------------------------------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/**
+ * Selection Styles
+ * -------------------------------------------------------------------------- */
+
+::selection {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-text-1);
+}
+
+.dark ::selection {
+  background: rgba(70, 89, 227, 0.3);
+  color: #c8d3f5;
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4659e3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#82aaff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#grad1)" opacity="0.1"/>
+
+  <!-- Main Icon - Keyboard/Terminal Symbol -->
+  <rect x="106" y="180" width="300" height="200" rx="20" fill="none" stroke="url(#grad1)" stroke-width="16"/>
+
+  <!-- Keyboard Keys -->
+  <rect x="140" y="220" width="40" height="35" rx="6" fill="url(#grad1)"/>
+  <rect x="195" y="220" width="40" height="35" rx="6" fill="url(#grad1)"/>
+  <rect x="250" y="220" width="40" height="35" rx="6" fill="url(#grad1)"/>
+  <rect x="305" y="220" width="40" height="35" rx="6" fill="url(#grad1)"/>
+
+  <!-- Command Prompt Line -->
+  <text x="140" y="310" font-family="monospace" font-size="32" font-weight="bold" fill="url(#grad1)">Ctrl</text>
+  <text x="225" y="310" font-family="monospace" font-size="32" font-weight="bold" fill="url(#grad1)">+</text>
+  <text x="270" y="310" font-family="monospace" font-size="32" font-weight="bold" fill="url(#grad1)">M</text>
+
+  <!-- Vim Cursor -->
+  <rect x="325" y="285" width="16" height="32" rx="2" fill="#c3e88d" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

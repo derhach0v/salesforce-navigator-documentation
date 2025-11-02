@@ -1,0 +1,17 @@
+# Assets Directory
+
+This directory contains screenshots and images for the documentation.
+
+## Screenshots Needed
+
+To improve the documentation, please add screenshots of:
+
+1. `navigator-panel.png` - Navigator Panel in action
+2. `record-editor.png` - Record Editor interface
+3. `inspector-panel.png` - Inspector Panel popup
+4. `query-tool.png` - SOQL Query Tool
+5. `developer-mode.png` - Chrome Developer Mode toggle
+6. `load-unpacked.png` - Load Unpacked button
+7. `pin-extension.png` - Pin Extension to toolbar
+
+For now, these images are referenced but not required for the build to succeed.
