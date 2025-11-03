@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Salesforce Navigator",
   description: "Keyboard-driven navigation and vim-like editing for Salesforce Lightning Experience",
-  base: '/salesforce-navigator-documentation/',
+  base: '/',
   cleanUrls: true,
 
   head: [
